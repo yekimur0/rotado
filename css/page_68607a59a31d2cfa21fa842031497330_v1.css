@@ -1,0 +1,564 @@
+
+
+/* Start:/local/templates/rotado/components/bitrix/catalog.section.list/banner/style.css?17181143395403*/
+/* Баннер */
+.banner {
+    background-color: #F7FAFB;
+}
+
+.banner h2 {
+    padding: 90px 0 36px;
+    text-align: center;
+    color: #2a2a2a;
+    margin: 0;
+    font-size: 40px;
+}
+.banner__img {
+    position: relative;
+}
+.banner__img img {
+    display: block;
+}
+
+.point {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(134.4deg, #278BFF 0%, #00A7EE 98.97%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.point.act:after {
+    top: 50%;
+    left: 50%;
+    transform: rotate(180deg) translate(50%, 50%);
+}
+.point:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.point:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition-duration: 0.2s;
+}
+
+/* Турбодефлектор */
+.point.p5 {
+    top: 11%;
+    left: 28.5%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/* Вентиляторы крышные */
+.point.p9 {
+    top: 12%;
+    left: 56%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+/* Шумоглушители */
+.point.p4 {
+    top: 29%;
+    left: 28.5%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/* Фильтры вентиляционные */
+.point.p8 {
+    top: 21%;
+    left: 56%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/* Фасонные изделия круглого сечения */
+.point.p2 {
+    top: 32%;
+    left: 51%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/* Воздухорегилирующие устройства */
+.point.p3 {
+    top: 50%;
+    left: 13.7%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/* Зонты вытяжные, приточно-вытяжные */
+.point.p7 {
+    top: 59%;
+    left: 13.7%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/* Фасонные изделия прямоугольного сечения */
+.point.p1 {
+    top: 53.6%;
+    left: 56%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/* Вентиляторы радиальные */
+.point.p10 {
+    top: 80%;
+    left: 87%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/* Скрытие блоков*/
+.point.p6, .point.p11, .point.p12 {
+    display: none;
+}
+
+.pointmenu {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 360px;
+    height: 136px;
+    border: 1px solid #E9F1F4;
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.04);
+    display: none;
+}
+.pointmenu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pointmenu__content {
+    padding-left: 17px;
+}
+
+.pointmenu__header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom: 16px;
+    max-width: 200px;
+}
+.pointmenu__link {
+    position: relative;
+}
+
+.pointmenu__link a {
+    color: #0090E3;
+}
+
+.pointmenu__link :before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("/local/templates/rotado/components/bitrix/catalog.section.list/banner/../img/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 100%;
+}
+
+.pointmenu__img-wrapper {
+    margin: 8px;
+    width: 120px;
+    height: 120px;
+}
+
+.pointmenu__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Турбодефлектор */
+.pointmenu.pm5 {
+    top: 7%;
+    left: 34%;
+}
+
+/* Вентиляторы крышные */
+.pointmenu.pm9 {
+    top: 10%;
+    left: 60%;
+}
+
+/* Шумоглушители */
+.pointmenu.pm4 {
+    top: 27%;
+    left: 32%;
+}
+
+/* Фильтры вентиляционные */
+.pointmenu.pm8 {
+    top: 20%;
+    left: 60%;
+}
+
+/* Фасонные изделия круглого сечения */
+.pointmenu.pm2 {
+    top: 29%;
+    left: 53%;
+}
+
+/* Воздухорегилирующие устройства */
+.pointmenu.pm3 {
+    top: 47%;
+    left: 16%;
+}
+
+/* Зонты вытяжные, приточно-вытяжные */
+.pointmenu.pm7 {
+    top: 57%;
+    left: 16%;
+}
+
+/* Фасонные изделия прямоугольного сечения */
+.pointmenu.pm1 {
+    top: 52%;
+    left: 59%;
+}
+
+/* Вентиляторы радиальные */
+.pointmenu.pm10 {
+    top: 72%;
+    left: auto;
+    right: 15%;
+}
+
+@media (max-width: 1200px) {
+    .banner h1 {
+        padding: 50px 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner h1 {
+        padding: 40px 0 20px;
+    }
+
+    .point {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner h1 {
+        padding: 40px 0 20px;
+    }
+}
+
+@media (max-width: 525px) {
+    .banner h1 {
+        padding: 40px 0 20px;
+    }
+}
+/* End */
+
+
+/* Start:/local/templates/rotado/components/bitrix/catalog.section.list/catalog-sections/style.css?17181143392107*/
+.catalog {
+    padding-bottom: 80px;
+}
+
+.catalog__menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.catalog__menu-item {
+    padding: 24px;
+    border: 1px solid #E9F1F4;
+    border-radius: 4px;
+    display: flex;
+    transition: all 400ms ease;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.catalog__menu-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.04);
+}
+
+.catalog__item-name {
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 16px;
+}
+
+.catalog__item-link {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.catalog__item-img {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+
+
+/* MEDIA */
+@media (max-width: 1350px) {
+    .catalog__menu {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    .catalog__menu {
+        gap: 20px;
+    }
+
+    .catalog__menu-item {
+        padding: 20px;
+    }
+    .catalog__item-name {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .catalog__menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .catalog__menu {
+        gap: 15px;
+    }
+
+    .catalog__item-name {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .catalog__menu-item {
+        padding: 14px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .catalog__item-link a {
+        padding: 0;
+    }
+}
+
+@media (max-width: 730px) {
+    .catalog__menu {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .catalog__menu {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog__item-img {
+        width: 100px;
+        margin: -50px 0 0 auto;
+    }
+
+    .catalog__item-name {
+        padding-right: 110px;
+    }
+}
+
+@media (max-width: 400px) {
+    .catalog__item-name {
+        padding-right: 70px;
+    }
+    .catalog__item-img {
+        width: 80px;
+        margin: -60px -10px 0 auto;
+    }
+}
+
+
+/* End */
+
+
+/* Start:/local/templates/rotado/components/bitrix/news.list/partners/style.css?17181143391391*/
+/* С нами работают*/
+.company {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 41px;
+}
+.company__item {
+    border: 1px solid #E9F1F4;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 400ms ease;
+    overflow: hidden;
+    position: relative;
+}
+.company__item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease;
+    opacity: 0;
+    background-image: linear-gradient(180deg, #E7F9FF 0%, #F7FAFB 100%);
+}
+.company__item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.04);
+}
+.company__item:hover:before {
+    opacity: 1;
+}
+.company__desc {
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+.company__desc .linkstr {
+    justify-content: center;
+}
+.company__name {
+    font-size: 24px;
+    padding: 0 10px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #001521;
+    line-height: 33px;
+    position: relative;
+}
+.company__img {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin: auto -1px -1px -1px;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+}
+.company img {
+    display: block;
+}
+/* End */
+
+
+/* Start:/local/templates/rotado/components/bitrix/news.list/projects/style.css?17181143391176*/
+.projects {
+	background-color: #F7FAFB;
+	padding: 96px 0;
+}
+.projects__header {
+	margin: 0 0 64px 0;
+}
+.projects__menu {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 40px;
+	cursor: pointer;
+	justify-content: center;
+}
+.projects__menuitem {
+	display: inline-block;
+	padding: 15px 28px;
+	border: 1px solid transparent;
+	border-radius: 30px;
+	color: #6787AD;
+	white-space: nowrap;
+	text-align: center;
+	font-size: 18px;
+	transition: all 0.3s ease;
+	margin-bottom: 8px;
+}
+.projects__menuitem.act {
+	border: 1px solid #1A98E0;
+	color: #0090E3;
+}
+.projects__menuitem:hover {
+	border: 1px solid #6787AD;
+}
+.projects__menuitem + .projects__menuitem {
+	margin-left: 24px;
+}
+.projects__videomenu {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+	width: 100%;
+	margin-bottom: 64px;
+}
+.projects__videoitem {
+	display: none;
+}
+.projects__videoitem.show {
+	display: block;
+}
+.projects__video img {
+	border-radius: 4px;
+	width: 100%;
+}
+.projects__name {
+	display: block;
+	margin: 16px 0 8px;
+	font-size: 18px;
+	line-height: 25px;
+}
+.projects__desc {
+	font-size: 14px;
+	line-height: 19px;
+	color: #595959;
+}
+.projects__all {
+	display: flex;
+	justify-content: center;
+}
+
+/* End */
+/* /local/templates/rotado/components/bitrix/catalog.section.list/banner/style.css?17181143395403 */
+/* /local/templates/rotado/components/bitrix/catalog.section.list/catalog-sections/style.css?17181143392107 */
+/* /local/templates/rotado/components/bitrix/news.list/partners/style.css?17181143391391 */
+/* /local/templates/rotado/components/bitrix/news.list/projects/style.css?17181143391176 */
