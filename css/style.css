@@ -234,7 +234,8 @@
 
 @media (max-width: 767px) {
   .c-trouble-item {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 14px;
   }
 }
@@ -262,7 +263,7 @@
   margin-bottom: 32px;
 }
 
-.c-trouble-item .content .link {
+.c-trouble-item .link {
   display: flex;
   align-items: center;
   gap: clamp(20px, 2.5vw, 40px);
@@ -270,13 +271,50 @@
   font-weight: 600;
   font-size: clamp(18px, 2vw, 24px);
   color: #181818;
-  max-width: 200px;
-  margin-left: auto;
+  max-width: 100%;
+  justify-content: space-between;
   transition: color 0.3s ease;
+  grid-column: span 2;
+}
+
+.c-trouble-item .link > svg {
+  pointer-events: none;
+}
+
+.c-trouble-item .capture-block {
+  border-radius: 16px;
+  padding: 20px;
+  background: #fff;
+  grid-column: span 2;
+  display: none;
+}
+
+.c-trouble-item .link.showed > svg {
+  rotate: -90deg;
+}
+
+.c-trouble-item .capture-block._is-active {
+  display: block;
+}
+
+.c-trouble-item .capture-block .capture-block-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: clamp(20px, 3vw, 28px);
+  line-height: 120%;
+  color: #181818;
+  margin-bottom: 14px;
+}
+
+.c-trouble-item .capture-block .capture-block-desc {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #181818;
 }
 
 @media (any-hover: hover) {
-  .c-trouble-item .content .link:hover {
+  .c-trouble-item .link:hover {
     color: #109cec;
   }
 }
